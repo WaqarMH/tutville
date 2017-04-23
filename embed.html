@@ -52,9 +52,8 @@ var stream = urlargs.stream;
 
 var phone = window.phone = PHONE({
     number        : "EmbedViewer" + Math.floor(Math.random()*100), // listen on username line else random
-    publpublish_key   : 'pub-c-bf6fc8bf-83a9-490d-a9ee-9f8306967ced', // Your Pub Key
-	subscribe_key : 'sub-c-eefaa3f2-2391-11e7-bb8a-0619f8945a4f', // Your Sub Keyish_key   : 'pub-c-bf6fc8bf-83a9-490d-a9ee-9f8306967ced', // Your Pub Key
-    subscribe_key : 'sub-c-eefaa3f2-2391-11e7-bb8a-0619f8945a4f', // Your Sub Key
+    publish_key   : 'pub-c-bf6fc8bf-83a9-490d-a9ee-9f8306967ced', // Your Pub Key
+	subscribe_key : 'sub-c-eefaa3f2-2391-11e7-bb8a-0619f8945a4f', // Your Sub Key
     oneway        : true,
 });
 var ctrl = window.ctrl = CONTROLLER(phone);
@@ -85,7 +84,7 @@ function urlparams() {
 }
 
 function handleNoStream(){
-	video_out.innerHTML="<h2>That stream no longer exists!</h2>";
+	video_out.innerHTML="<h2 class="classmsg">Class is Not Started yet!</h2>";
 	stream_info.hidden=true;
 }
 
