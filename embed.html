@@ -61,7 +61,8 @@ var phone = window.phone = PHONE({
     publish_key   : 'pub-c-bf6fc8bf-83a9-490d-a9ee-9f8306967ced', // Your Pub Key
     subscribe_key : 'sub-c-eefaa3f2-2391-11e7-bb8a-0619f8945a4f', // Your Sub Key
     oneway        : true,
-     ssl : (('https:' == document.location.protocol) ? true : false)
+    ssl: true
+     
 });
 var ctrl = window.ctrl = CONTROLLER(phone);
 ctrl.ready(function(){
@@ -89,7 +90,7 @@ function urlparams() {
     return params;
 }
 function handleNoStream(){
-	video_out.innerHTML="<h2>eee</h2>";
+	video_out.innerHTML="<h2>edddee</h2>";
 	stream_info.hidden=true;
 }
 }());
